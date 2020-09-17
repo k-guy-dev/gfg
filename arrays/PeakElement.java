@@ -42,19 +42,20 @@ class Peak {
     // a[]: input array
     // n: size of array a[]
     public int peakElement(int[] a, int n) {
-
-        return divideConqPeak(arr, 0, n - 1, n);
-    }
-
-    static int divideConqPeak(int arr[], int l, int r, int n) {
-        int mid = l + (r - 1) / 2;
-        if ((mid == 0 || arr[mid - 1] <= arr[mid]) && (mid == n - 1) || arr[mid + 1] > arr[mid]) {
-            return mid;
-        } else if (mid > 0 && arr[mid - 1] > arr[mid]) {
-            return divideConqPeak(arr, l, mid - 1, n);
-        } else {
-            return divideConqPeak(arr, mid + 1, r, n);
+        int index;
+        for (int i = 0; i < n - 1; i++) {
+            if (a[i] >= a[i - 1] && a[i] >= a[i + 1]) {
+                index = i;
+            }
         }
+        if (n > 1) {
+            if (a[0] > a[1]) {
+                index = 0;
+            } else if (a[n - 1] > a[n - 2]) {
+                index = n - 1;
+            }
+        }
+        return index;
     }
 
 }
