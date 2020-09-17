@@ -36,8 +36,14 @@ class Solution {
         for (int i = 0; i < n; i++) {
             hm.put(A[i], i);
             if (i == k - 1) {
-
+                al.add(hm.size());
+            }
+            if (i >= k) {
+                if (hm.get(A[i - k]) == i - k)
+                    hm.remove(A[i - k]);
+                al.add(hm.size());
             }
         }
+        return al;
     }
 }
