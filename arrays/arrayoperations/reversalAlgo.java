@@ -1,6 +1,6 @@
 package arrays.arrayoperations;
 
-class Main {
+class reversalAlgo {
 
     void rotation(int[] arr, int d) {
         int n = arr.length;
@@ -21,11 +21,7 @@ class Main {
     }
 
     public static void main(String[] args) {
-        /*** INSERT GENERIC THIINNNGSSSSSSS */
+        int arr[] = { 1, 2, 3, 4, 5, 6 };
+
     }
-
 }
-
-           
-
-    
