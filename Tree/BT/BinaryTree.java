@@ -1,4 +1,4 @@
-package Binary_Tree.BT;
+package Tree.BT;
 
 class Node {
     int key;
@@ -11,10 +11,10 @@ class Node {
 }
 
 class BinaryTree {
-    Node root;
+    Node root; // Declared A root node
 
     BinaryTree(int key) {
-        root = new Node(key);
+        root = new Node(key); // Initialized the object
     }
 
     BinaryTree() {

@@ -1,5 +1,5 @@
 // f(n) = Σ f(i-1).f(n-i)
-package Binary_Tree.BT;
+package Tree.BT;
 
 class CatalnNo {
     int catalan(int n) {

@@ -1,3 +1,4 @@
+package Tree.BT;
 
 // JAVA implementation of tree using array
 // numbering starting from 0 to n-1.
