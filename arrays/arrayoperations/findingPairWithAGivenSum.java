@@ -1,6 +1,7 @@
 package arrays.arrayoperations;
 
 class findingPairWithAGivenSum {
+    //Array is sorted and rotated
     static boolean pairSumPresent(int arr[], int n, int x) {
         int i;
         // Finding Pivot Element
