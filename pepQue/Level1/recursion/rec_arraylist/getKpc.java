@@ -2,8 +2,11 @@ package pepQue.Level1.recursion.rec_arraylist;
 
 import java.util.*;
 
-class getSubsequence {
-    public static ArrayList<String> gss(String str) {
+class getKpc {
+
+    static String[] coded = { ".;", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tu", "vwx", "yz" };
+
+    public static ArrayList<String> getKpc(String str) {
 
         if (str.length() == 0) {
             ArrayList<String> bres = new ArrayList<>();
@@ -13,12 +16,16 @@ class getSubsequence {
 
         char ch = str.charAt(0);
         String ros = str.substring(1);
-        ArrayList<String> rres = gss(ros);
 
+        ArrayList<String> rres = getKpc(ros);
         ArrayList<String> mres = new ArrayList<>();
-        for (String rstr : rres) {
-            mres.add("" + rstr);
-            mres.add(ch + rstr);
+
+        String ch_coded = coded[Integer.parseInt(Character.toString(ch))];
+
+        for (int i = 0; i < ch_coded.length(); i++) {
+            for (String s : rres) {
+                mres.add(ch_coded.charAt(i) + s);
+            }
         }
         return mres;
     }
@@ -28,7 +35,7 @@ class getSubsequence {
         String s = sc.nextLine();
         ArrayList<String> al = new ArrayList<>();
 
-        al = gss(s);
+        al = getKpc(s);
         System.out.println(al);
     }
 }
