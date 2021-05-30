@@ -1,10 +1,13 @@
-package arrays.sorting;
+package gfgPractice.arraysMedium;
 
-class quickSort {
-    int partition(int[] arr, int low, int high) {
+import java.util.*;
+
+class segregate01 {
+    static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
-        int i = (low - 1);
-        for (int j = low; j < high; j++) {
+        int i = low - 1;
+
+        for (int j = 0; j < high; j++) {
             if (arr[j] < pivot) {
                 i++;
                 int temp = arr[i];
@@ -18,11 +21,11 @@ class quickSort {
         return i + 1;
     }
 
-    void sort(int[] arr, int low, int high) {
+    void quickSort(int[] arr, int low, int high) {
         if (low < high) {
-            int pi = partition(arr, low, high);
-            sort(arr, low, pi - 1);
-            sort(arr, pi + 1, high);
+            int pivot = partition(arr, low, high);
+            quickSort(arr, low, pivot - 1);
+            quickSort(arr, pivot + 1, high);
         }
     }
 

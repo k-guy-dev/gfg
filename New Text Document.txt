@@ -1,0 +1,42 @@
+==========================:DSA PRACTICE JOURNAL:======================================
+Last-Visit: 06.05.21
+No-of-Que-Practice: 0
+Streak: 0
+
+
+Topic: Arrays
+Questions:
+
+
+Topic: Stings
+Questions:
+1.Remove Duplicates - 
+Given a string without spaces, the task is to remove duplicates from it.
+
+Topic: Sorting
+Questions:
+
+
+Topic: Searching
+Questions:
+
+
+
+Topic: Matrix
+Questions:
+1. Inplace 90 deg anti clockwise matrix rotation
+
+
+Topic:	Mathematics
+Questions:
+1.Number of paths-The problem is to count all the possible paths from top left to bottom right of a MxN matrix with the constraints that from each cell you can either move to right or down.
+
+Topic: Recursion
+Questions:
+1.Generate Parentheses-Given an integer N representing the number of pairs of parentheses, the task is to generate all combinations of well-formed(balanced) parentheses.
+2.Gray Code (didn't use rec tho!) - Given a number N, generate bit patterns from 0 to 2^N-1 such that successive patterns differ by one bit.(N = 2-->00 01 11 10) 
+
+
+Topic: Binary Search
+Questions:
+
